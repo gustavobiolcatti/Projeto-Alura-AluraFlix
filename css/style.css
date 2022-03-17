@@ -1,0 +1,191 @@
+body {
+	font-family: "Roboto Mono", monospace;
+	text-align: center;
+	background-image: url('https://wallpaperaccess.com/full/713148.jpg');
+	background-color: #000000;
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.container {
+	text-align: center;
+	padding: 20px;
+}
+
+.page-title {
+	color: #ffffff;
+	margin: 0 0 5px;
+}
+
+.page-subtitle {
+	color: #ffffff;
+	margin-top: 5px;
+}
+
+.page-logo {
+	width: 200px;
+}
+
+.alura-logo {
+	width: 40px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+body > img {
+	margin: 0 10px;
+}
+
+img {
+	max-height: 250px;
+}
+
+/*  */
+
+.titulo--padrao {
+	margin-bottom: 1em;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 0 5px #000;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#catalogo {
+    width: 80%;
+	max-width: 1200px;
+	padding: 1em 2em;
+	margin: 50px auto 0;
+	background-color: #f3f3f390;
+	border-radius: 15px;
+}
+
+.formulario {
+	width: 50%;
+	padding: 2em 2em;
+	margin: 100px auto 0;
+	background-color: #f3f3f390;
+	border-radius: 15px;
+}
+
+.formulario__caixa {
+	display: grid;
+	max-width: 350px;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	box-sizing: border-box;
+}
+
+.formulario__label--padrao {
+	display: block;
+    margin-bottom: 10px;
+	text-align: start;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+	grid-column: span 2;
+}
+
+.formulario__input--padrao {
+	display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border: 2px solid #000;
+    border-radius: 5px;
+	box-sizing: border-box;
+	grid-column: span 2;
+}
+
+.formulario__input--erro {
+	border: 2px solid #f00;
+}
+
+.formulario__botao--padrao {
+	width: 100%;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #059bc0;
+    border: none;
+    border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+	cursor: pointer;
+    transition: 0.25s;
+}
+
+.formulario__botao--padrao:hover {
+	transform: scale(0.95);
+	background-color: #0082a3;
+}
+
+.formulario__alerta {
+	display: none;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	text-align: center;
+	font-weight: bold;
+}
+
+.formulario__alerta-erro--ativo {
+	display: block;
+	background-color: #BF300F;
+}
+
+.formulario__alerta-sucesso--ativo {
+	display: block;
+	background-color: #03974f;
+}
+
+.catalogo__lista {
+    display: flex;
+	padding: 0;
+	list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.catalogo__item {
+    display: inline-block;
+    width: 25%;
+	margin: 2em 0;
+}
+
+.catalogo__item:hover .titulo-jogo{
+	opacity: 1;
+}
+
+.catalogo__item:hover .capa {
+	transform: scale(1.1);
+}
+
+.capa {
+	width: 205px;
+	height: 300px;
+	max-height: none;
+	box-shadow: 0 0 10px #000;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.titulo-jogo {
+    color: #fff;
+	opacity: 0;
+	text-transform: capitalize;
+	text-shadow: 0 0 5px #000;
+	font-size: 1.1em;
+	font-weight: bold;
+	transition: 0.5s;
+}
